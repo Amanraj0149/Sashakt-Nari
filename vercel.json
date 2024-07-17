@@ -1,0 +1,23 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "src/index.js",
+        "use": "@vercel/node"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "/src/index.js"
+      }
+    ],
+    "env": {
+      "NODE_ENV": "production",
+      "PORT": "3000",
+      "SECRET_KEY": "aman",
+      "MONGODB_URI": "mongodb+srv://amanrj248:blogifybajrang@blogify1.g9m2y2w.mongodb.net"
+    }
+  }
+  
+  
